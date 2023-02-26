@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-char    *ft_read(int read, char *str)
+char    *ft_read(int fd, char *str)
 {
     int     rd;
     char    *buffer;
@@ -23,7 +23,7 @@ char    *ft_read(int read, char *str)
     rd = 1;
     while (!ft_n(str) && rd != 0)
     {
-        re = read(fd, buffer, BUFFER_SIZE);
+        rd = read(fd, buffer, BUFFER_SIZE);
         if (rd == -1)
         {
             free(str);
@@ -31,7 +31,7 @@ char    *ft_read(int read, char *str)
             return (NULL);
         }
         *(buffer + rd) = '\0';
-        str = fd_strjoin(str, buffer);
+        str = ft_strjoin(str, buffer);
     }
     free(buffer);
     return (str);

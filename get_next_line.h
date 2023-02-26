@@ -28,13 +28,3 @@ char	*ft_new_str(char *str);
 char	*get_next_line(int fd);
 
 #endif
-
-//buffersize
-//Bir örnek alalım
-//Paraya ihtiyacınız olduğunu ve size yardım eden birini tanıdığınızı varsayalım. Yani o kişiden para istiyorsun.
-/* Ve o kişi sana kaç tane soruyor? çünkü çok parası var.
-Benzer şekilde, tampon, paraya ihtiyaç duyan bir kişidir 
-(bizim durum belleğimiz) ve işletim sistemi, parası olan bir kişidir 
-(sistem belleğinin sahibi).Bu nedenle arabellek boyutunu ayarlamak,
-işletim sistemine benim için gereken bellek boyutunu söyler ve işletim
-sistemi, çalışma zamanında programımız için bu miktarda belleği yönetir.*\
