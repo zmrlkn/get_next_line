@@ -40,7 +40,7 @@ char	*ft_read(int fd, char *str)
 char	*get_next_line(int fd)
 {
 	char		*line;
-	static char	*strs[125];
+	static char	*strs[256];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
